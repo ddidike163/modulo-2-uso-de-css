@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BauhausRegular';
+    src: url('./bauhaus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +22,7 @@
 
 
 body{
-    font-family: 'BauhausHeavy';
+    font-family: 'BauhausRegular';
     background-color: #FFD83D;
     color: #000;
 }
@@ -88,13 +95,20 @@ h2{
     transform: translate(-4px, -4px);
 }
 
+/* ===== IMAGEN ===== */
+
+
 .producto-img{
     height: 280px;
     width: 100%;
     object-fit: contain;
 }
 
+/* ===== TEXTO ===== */
+
+
 .producto-titulo{
+    font-family: 'BauhausHeavy';
     font-size: 20px;
     font-weight: bold;
 }
