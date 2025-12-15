@@ -110,14 +110,24 @@ h2{
 .producto-titulo{
     font-family: 'BauhausHeavy';
     font-size: 20px;
-    font-weight: bold;
+    margin: 10px 0;
 }
 
 .producto-desc{
+    font-family: 'BauhausRegular';
     font-size: 15px;
-    color: violet;
-    height: 30px;
+    color: #2b2b2b;
+    margin-bottom: 10px;
 }
+
+.producto-precio{
+    font-family: 'BauhausHeavy';
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* ===== BOTÓN ===== */
+
 
 .producto-btn{
     background-color: brown;
