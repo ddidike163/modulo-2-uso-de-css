@@ -73,14 +73,19 @@ h2{
 /* ===== TARJETAS ===== */
 
 
-.producto-tarjeta{
+.producto-tarjeta {
     width: 280px;
     background-color: #FFFFFF;
     border-radius: 25px;
     text-align: center;
     margin: 20px;
     padding: 15px;
-    display: inline-block;
+    box-shadow: 6px 6px 0 #000;
+    transition: transform 0.2s;
+}
+
+.producto-tarjeta:hover{
+    transform: translate(-4px, -4px);
 }
 
 .producto-img{
