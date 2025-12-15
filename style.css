@@ -49,12 +49,37 @@ nav a:hover{
 }
 
 
+/* ===== SECCIONES ===== */
+
+section{
+    padding: 40px 20px;
+}
+
+h2{
+    font-family: 'BauhausHeavy';
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* ===== CATÁLOGO ===== */
+
+
+.catalogo-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ===== TARJETAS ===== */
+
+
 .producto-tarjeta{
     width: 280px;
-    background-color: antiquewhite;
-    border-radius: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
     text-align: center;
     margin: 20px;
+    padding: 15px;
     display: inline-block;
 }
 
