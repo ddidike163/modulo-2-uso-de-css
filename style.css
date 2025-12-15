@@ -130,14 +130,18 @@ h2{
 
 
 .producto-btn{
-    background-color: brown;
-    color: blanchedalmond;
+    font-family: 'BauhausHeavy';
+    background-color: #e94e77;
+    color: #FFF;
     border: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 12px 18px;
     border-radius: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 .producto-btn:hover{
-    background-color: rgb(105, 45, 45);
+    background-color: #000;
+    color: FFD83D;
 }
+
+/* ===== ENTREGAS ===== */
