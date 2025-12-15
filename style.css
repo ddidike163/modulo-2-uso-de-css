@@ -77,11 +77,16 @@ h2{
     flex-wrap: wrap;
 }
 
+#catalogo .catalogo-container {
+    margin: 0 auto;
+    justify-content: center;
+}
+
 /* ===== TARJETAS ===== */
 
 
 .producto-tarjeta {
-    width: 280px;
+    width: 250px;
     background-color: #FFFFFF;
     border-radius: 25px;
     text-align: center;
@@ -146,6 +151,12 @@ h2{
 
 /* ===== ENTREGAS ===== */
 
+#entregas p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
 #entregas ul{
     max-width: 700px;
     margin: 0 auto;
@@ -157,6 +168,13 @@ h2{
     margin: 10px 0;
 }
 
+
+/* ===== ACERCA =====*/
+#acerca p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
 
 /* ===== CONTACTO ===== */
 
@@ -208,4 +226,14 @@ h2{
 .form-contacto button:hover {
     background-color: #000;
     color: #FFD83D;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    font-family: 'BauhausRegular';
+    background-color: #000;
+    color: #FFD83D;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
