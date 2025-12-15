@@ -141,7 +141,71 @@ h2{
 }
 .producto-btn:hover{
     background-color: #000;
-    color: FFD83D;
+    color: #FFD83D;
 }
 
 /* ===== ENTREGAS ===== */
+
+#entregas ul{
+    max-width: 700px;
+    margin: 0 auto;
+    list-style: square;
+}
+
+#entregas li{
+    font-family: BauhausHeavy;
+    margin: 10px 0;
+}
+
+
+/* ===== CONTACTO ===== */
+
+
+.contacto-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #FFD83D;
+}
+
+.contacto-section h2 {
+    font-family: 'BauhausHeavy';
+    color: #FFD83D;
+}
+
+.contacto-section p {
+    font-family: 'BauhausRegular';
+}
+
+.form-contacto {
+    background-color: #FFD83D;
+    padding: 20px;
+    border-radius: 20px;
+    color: #000;
+    width: 300px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    font-family: 'BauhausRegular';
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-contacto button {
+    font-family: 'BauhausHeavy';
+    background-color: #E94E77;
+    color: #FFF;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form-contacto button:hover {
+    background-color: #000;
+    color: #FFD83D;
+}
