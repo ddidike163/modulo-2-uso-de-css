@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'BauhausHeavy';
+    src: url('./bauhaus-heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'BauhausHeavy';
+}
+
+
 .producto-tarjeta{
     width: 280px;
     background-color: antiquewhite;
