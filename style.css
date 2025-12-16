@@ -29,24 +29,35 @@ body{
 
 /* ===== HEADER / NAV ===== */
 
-
-header{
-    background-color: #000;
+.top-banner{
+    background-color: #E94E77;
+    background: linear-gradient(90deg,#E01B6D 0%, #FFD83D 100%);
     padding: 15px 0;
     text-align: center;
     font-family: 'BauhausHeavy';
     font-size: 30px;
-
 }
 
-header p{
+.top-banner p{
     color: #FFD83D;
+}
+
+
+nav{
+    background-color: #000;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'BauhausHeavy';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
     list-style: none;
 }
 
@@ -54,11 +65,13 @@ nav a{
     font-family: 'BauhausHeavy';
     color: #FFD83D;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    transition: .3s;
 }
 
 nav a:hover{
     text-decoration: underline;
+    color: #c0a32e;
 
 }
 
@@ -156,6 +169,14 @@ h2{
     color: #FFD83D;
 }
 
+/*===== BADGE =====*/
+
+.producto-badge{
+    position: absolute;
+    background-color: #E01B6D;
+}
+
+
 /* ===== ENTREGAS ===== */
 
 #entregas{
@@ -207,6 +228,7 @@ h2{
 
 .contacto-section p {
     font-family: 'BauhausRegular';
+    padding: 20px 0;
 }
 
 .form-contacto {
