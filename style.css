@@ -164,6 +164,8 @@ h2{
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
+    box-shadow: 6px 6px 0 #000;
+    transition: .3s ease-in-out;
 }
 .producto-btn:hover{
     background-color: #000;
@@ -279,4 +281,27 @@ footer {
     padding: 20px;
     font-size: 14px;
     font-size: 20px;
+}
+
+
+/*===== Boton flotante position fixed carrito =====*/
+
+.carrito-btn{
+    position: fixed;
+    background-color: #E94E77;
+    color: #FFF;
+    bottom: 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 20px;
+    z-index: 1500;
+    box-shadow: 6px 6px 0 #000;
+    transition: .3s ease-in-out;
+}
+
+.carrito-btn:hover{
+    background-color: #7a253c;
 }
