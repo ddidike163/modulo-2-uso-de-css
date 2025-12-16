@@ -86,7 +86,7 @@ h2{
 
 
 .producto-tarjeta {
-    width: 250px;
+    width: 290px;
     background-color: #FFFFFF;
     border-radius: 25px;
     text-align: center;
@@ -152,13 +152,13 @@ h2{
 /* ===== ENTREGAS ===== */
 
 #entregas p {
-    max-width: 700px;
+    max-width: 900px;
     margin: 15px auto;
     line-height: 1.5;
 }
 
 #entregas ul{
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     list-style: square;
 }
@@ -171,7 +171,7 @@ h2{
 
 /* ===== ACERCA =====*/
 #acerca p {
-    max-width: 700px;
+    max-width: 900px;
     margin: 15px auto;
     line-height: 1.6;
 }
