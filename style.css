@@ -45,34 +45,50 @@ body{
 
 nav{
     background-color: #000;
-    padding: 15px 0;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'BauhausHeavy';
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-nav ul{
+/* CONTENEDOR INTERNO */
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+
+    flex-wrap: wrap;
+
     display: flex;
-    justify-content: center;
-    gap: 100px;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a{
+/* LOGO / TITULO */
+nav h2{
+    font-family: 'BauhausHeavy';
+    color: #FFD83D;
+    font-size: 30px;
+}
+
+/* LISTA */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+/* LINKS */
+.nav-links a{
     font-family: 'BauhausHeavy';
     color: #FFD83D;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 26px;
     transition: .3s;
 }
 
-nav a:hover{
+.nav-links a:hover{
     text-decoration: underline;
     color: #c0a32e;
-
 }
 
 
@@ -95,9 +111,6 @@ h2{
 .catalogo-container{
     display: flex;
     flex-wrap: wrap;
-}
-
-#catalogo .catalogo-container {
     margin: 0 auto;
     justify-content: center;
 }
@@ -115,6 +128,8 @@ h2{
     box-shadow: 6px 6px 0 #000;
     transition: transform 0.2s;
     position: relative;
+
+    flex: 1 1 240px; /*ocupa minimo 290px, crece y encoge*/
 }
 
 .producto-tarjeta:hover{
