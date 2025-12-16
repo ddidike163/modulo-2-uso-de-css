@@ -114,6 +114,7 @@ h2{
     padding: 15px;
     box-shadow: 6px 6px 0 #000;
     transition: transform 0.2s;
+    position: relative;
 }
 
 .producto-tarjeta:hover{
@@ -173,7 +174,12 @@ h2{
 
 .producto-badge{
     position: absolute;
-    background-color: #E01B6D;
+    background-color: #e01b1b;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
 }
 
 
