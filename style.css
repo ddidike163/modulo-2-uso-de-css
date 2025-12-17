@@ -20,7 +20,6 @@
 
 /* ===== BODY ===== */
 
-
 body{
     font-family: 'BauhausRegular';
     background-color: #FFD83D;
@@ -42,7 +41,6 @@ body{
     color: #FFD83D;
 }
 
-
 nav{
     background-color: #000;
     position: sticky;
@@ -55,9 +53,7 @@ nav{
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 40px;
-
     flex-wrap: wrap;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +87,6 @@ nav h2{
     color: #c0a32e;
 }
 
-
 /* ===== SECCIONES ===== */
 
 section{
@@ -107,7 +102,6 @@ h2{
 
 /* ===== CATÁLOGO ===== */
 
-
 .catalogo-container{
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +110,6 @@ h2{
 }
 
 /* ===== TARJETAS ===== */
-
 
 .producto-tarjeta {
     width: 290px;
@@ -128,8 +121,7 @@ h2{
     box-shadow: 6px 6px 0 #000;
     transition: transform 0.2s;
     position: relative;
-
-    flex: 1 1 240px; /*ocupa minimo 290px, crece y encoge*/
+    flex: 1 1 240px;
 }
 
 .producto-tarjeta:hover{
@@ -138,7 +130,6 @@ h2{
 
 /* ===== IMAGEN ===== */
 
-
 .producto-img{
     height: 280px;
     width: 100%;
@@ -146,7 +137,6 @@ h2{
 }
 
 /* ===== TEXTO ===== */
-
 
 .producto-titulo{
     font-family: 'BauhausHeavy';
@@ -169,7 +159,6 @@ h2{
 
 /* ===== BOTÓN ===== */
 
-
 .producto-btn{
     font-family: 'BauhausHeavy';
     background-color: #e94e77;
@@ -182,6 +171,7 @@ h2{
     box-shadow: 6px 6px 0 #000;
     transition: .3s ease-in-out;
 }
+
 .producto-btn:hover{
     background-color: #000;
     color: #FFD83D;
@@ -198,7 +188,6 @@ h2{
     padding: 5px 12px;
     border-radius: 20px;
 }
-
 
 /* ===== ENTREGAS ===== */
 
@@ -223,15 +212,14 @@ h2{
     margin: 10px 0;
 }
 
-
 /* ===== ACERCA =====*/
+
 #acerca p {
     max-width: 900px;
     margin: 15px auto;
     line-height: 1.6;
     font-size: 25px;
 }
-
 
 /*===== EQUIPO =====*/
 
@@ -273,13 +261,10 @@ h2{
     border-radius: 40px;
     box-shadow: 6px 6px 0 #c0a32e;
     text-align: center;
-    /*FLEX INTERNO*/
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
-
 }
 
 .equipo-img{
@@ -293,7 +278,6 @@ h2{
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 .equipo-tarjeta h3{
     font-family: 'BauhausHeavy';
@@ -315,7 +299,6 @@ h2{
 }
 
 /* ===== CONTACTO ===== */
-
 
 .contacto-section {
     display: flex;
@@ -366,6 +349,7 @@ h2{
     display: block;
     margin: 20px auto 0;
     transition: .3s ease-in-out;
+    border: none;
 }
 
 .form-contacto button:hover {
@@ -374,16 +358,15 @@ h2{
 }
 
 /* ===== FOOTER ===== */
+
 footer {
     font-family: 'BauhausRegular';
     background-color: #000;
     color: #FFD83D;
     text-align: center;
     padding: 20px;
-    font-size: 14px;
     font-size: 20px;
 }
-
 
 /*===== Boton flotante position fixed carrito =====*/
 
@@ -405,4 +388,439 @@ footer {
 
 .carrito-btn:hover{
     background-color: #7a253c;
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
+
+/* Pantalla mediana - 1024px y menos */
+@media (max-width: 1024px) {
+    .top-banner{
+        font-size: 26px;
+        padding: 13px 10px;
+    }
+
+    .nav-container{
+        padding: 15px 30px;
+    }
+
+    nav h2{
+        font-size: 28px;
+    }
+
+    .nav-links{
+        gap: 25px;
+    }
+
+    .nav-links a{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    .producto-tarjeta{
+        width: 260px;
+    }
+
+    #entregas{
+        font-size: 22px;
+    }
+
+    #acerca p{
+        font-size: 22px;
+    }
+
+    .equipo-section p.equipo-section-desc{
+        font-size: 22px;
+        margin-bottom: 100px;
+    }
+
+    .contacto-section{
+        font-size: 22px;
+    }
+}
+
+/* Pantalla Medio pequeña - 768px y menos */
+@media (max-width: 768px) {
+    .top-banner{
+        font-size: 22px;
+        padding: 12px 10px;
+    }
+
+    .nav-container{
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav h2{
+        font-size: 26px;
+    }
+
+    .nav-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .producto-tarjeta{
+        width: 240px;
+    }
+
+    #entregas{
+        font-size: 20px;
+    }
+
+    #acerca p{
+        font-size: 20px;
+    }
+
+    .equipo-section p.equipo-section-desc{
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .contacto-section{
+        font-size: 20px;
+        gap: 30px;
+    }
+
+    .contacto-contenido{
+        padding: 20px;
+    }
+
+    .form-contacto{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+    .carrito-btn{
+        font-size: 18px;
+        padding: 10px 16px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Pantalla pequeña - 480px y menos */
+@media (max-width: 480px) {
+    .top-banner{
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+    .nav-container{
+        padding: 10px 15px;
+    }
+
+    nav h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav-links{
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .nav-links a{
+        font-size: 16px;
+    }
+
+    section{
+        padding: 30px 15px;
+    }
+
+    h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .producto-tarjeta{
+        width: 100%;
+        max-width: 320px;
+        margin: 15px 10px;
+    }
+
+    .producto-img{
+        height: 220px;
+    }
+
+    .producto-titulo{
+        font-size: 24px;
+    }
+
+    .producto-desc{
+        font-size: 16px;
+    }
+
+    .producto-precio{
+        font-size: 20px;
+    }
+
+    .producto-btn{
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    .producto-badge{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    #entregas{
+        font-size: 16px;
+    }
+
+    #entregas ul{
+        padding-left: 25px;
+    }
+
+    #acerca p{
+        font-size: 16px;
+    }
+
+    .equipo-section p.equipo-section-desc{
+        font-size: 16px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    .equipo-section p{
+        font-size: 16px;
+    }
+
+    .equipo-tarjeta{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .equipo-tarjeta h3{
+        font-size: 22px;
+    }
+
+    .equipo-rol{
+        font-size: 14px;
+    }
+
+    .equipo-desc{
+        font-size: 16px;
+    }
+
+    .contacto-section{
+        font-size: 16px;
+        padding: 30px 15px;
+    }
+
+    .contacto-contenido{
+        padding: 15px;
+    }
+
+    .form-contacto{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-contacto h2{
+        font-size: 22px;
+    }
+
+    .form-contacto input,
+    .form-contacto textarea{
+        font-size: 16px;
+    }
+
+    .form-contacto button{
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    footer{
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+
+    .carrito-btn{
+        font-size: 16px;
+        padding: 8px 12px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Pantalla muy pequeña - 320px y menos */
+@media (max-width: 320px) {
+    .top-banner{
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    .nav-container{
+        padding: 8px 10px;
+    }
+
+    nav h2{
+        font-size: 18px;
+    }
+
+    .nav-links{
+        gap: 8px;
+    }
+
+    .nav-links a{
+        font-size: 14px;
+    }
+
+    section{
+        padding: 25px 10px;
+    }
+
+    h2{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .producto-tarjeta{
+        width: 100%;
+        max-width: 280px;
+        margin: 10px 5px;
+        padding: 12px;
+    }
+
+    .producto-img{
+        height: 180px;
+    }
+
+    .producto-titulo{
+        font-size: 20px;
+    }
+
+    .producto-desc{
+        font-size: 14px;
+    }
+
+    .producto-precio{
+        font-size: 18px;
+    }
+
+    .producto-btn{
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .producto-badge{
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    #entregas{
+        font-size: 14px;
+    }
+
+    #entregas ul{
+        padding-left: 20px;
+    }
+
+    #entregas li{
+        margin: 8px 0;
+    }
+
+    #acerca p{
+        font-size: 14px;
+    }
+
+    .equipo-section{
+        padding: 30px 15px;
+    }
+
+    .equipo-section p.equipo-section-desc{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .equipo-contenedor{
+        margin-top: 50px;
+    }
+
+    .equipo-tarjeta{
+        width: 100%;
+        max-width: 260px;
+        padding: 50px 15px 25px;
+    }
+
+    .equipo-img{
+        width: 100px;
+        height: 100px;
+        top: -45px;
+    }
+
+    .equipo-tarjeta h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .equipo-rol{
+        font-size: 13px;
+    }
+
+    .equipo-desc{
+        font-size: 14px;
+    }
+
+    .contacto-section{
+        font-size: 14px;
+        padding: 25px 10px;
+    }
+
+    .contacto-contenido{
+        padding: 10px;
+    }
+
+    .contacto-contenido p{
+        padding: 15px 0;
+    }
+
+    .form-contacto{
+        padding: 12px;
+    }
+
+    .form-contacto h2{
+        font-size: 20px;
+    }
+
+    .form-contacto input,
+    .form-contacto textarea{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-contacto button{
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    footer{
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+
+    .carrito-btn{
+        font-size: 14px;
+        padding: 7px 10px;
+        bottom: 12px;
+        right: 12px;
+    }
 }
